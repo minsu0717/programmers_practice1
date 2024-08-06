@@ -9,3 +9,15 @@ function solution(i, j, k) {
   }
   return answer;
 }
+
+function solution(i, j, k) {
+  var answer = 0;
+  for (i; i <= j; i++) {
+    String(i)
+      .split("")
+      .forEach((e) => {
+        if (e.includes(k)) answer++;
+      });
+  }
+  return answer;
+}
